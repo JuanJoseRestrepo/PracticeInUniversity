@@ -121,6 +121,13 @@ public String verificarTrabajo(String type, int nu, double inco, double incoServ
 	
 	String msj ="";
 	
+	if(type.equals(ServiceType.PEDICURE)){
+		if(service1 == null){
+			setService1(type,nu,inco,incoService);
+		}
+	else if(type.equals(ServiceType.HAIR)[
+	
+	
 	
 	return msj;
 	
