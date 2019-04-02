@@ -78,7 +78,59 @@ public ServiceType getService3(){
 
 public void setService3(ServiceType service3){
 	this.service3 = service3;
+}	
+/*
+public String dependeDelTipo(){
+	String msj = "";
+	if(service1 ! = null){
+	if(service1.getNameService().equals(ServiceType.PEDICURE)){
+	msj = "Pedicure";
+	}else if(service2.getNameService().equals(ServiceType.HAIR)){
+	 msj = "Cabello";
+	}else if(service3.getNameService().equals(ServiceType.MANICURE)){
+		 msj = "Manicure";
+	 }else {
+			 msj = "No existe mas tipos";
+		 }
+	}
+		 return msj;
+	 }
+	}
+*/
+public String reportOfService(){
+	String msg = "";
+	
+	if(service1 != null){
+	if( service1.getNumberTime < 10){
+		
+		msg += "El emmpleado" + getNameEmployer() + "tiene" + service1.getAccumulatedTypeOfService() + "Por concepto de Pedicure";
+	}else if( service1.getNumberTime() >= 10 && service1.getNumberTime() =< 20){
+		msg += "El emmpleado" + getNameEmployer() + "tiene" + service1.getAccumulatedIncome() + "de pesos" + " por ingresos acumulados";
+	}else if(service1.getNumberTime() >=20 && (service1.getNumberTime())%10 == 0){
+			msg += "Felicitaciones a" + getNameEmployer() + "!!!!!!!!!" + "La sala cubrira el valor de su impuesto";
+	}else{
+		msg += "El empleado" + getNameEmployer() + "No presta el servicio de pedicure";
+			}
+	}			
+	return msg;
+
+
 }
+
+public String verificarTrabajo(String type, int nu, double inco, double incoService){
+	
+	String msj ="";
+	
+	
+	return msj;
+	
+	
+	
+	
+	
+	
+}	
+
 
 
 

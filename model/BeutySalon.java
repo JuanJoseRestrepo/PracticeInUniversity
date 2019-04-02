@@ -39,11 +39,14 @@ public void setEmple2(Employeer emple2){
 	this.emple2 = emple2;
 }
 
+public Employeer registrarCliente(String nameEmp, String identi, String dateI,Strig type, int nu, double inco, double incoService){
+	
+	Employeer m = new Employeer(nameEmp, identi, dateI);
+	
+	m.verificarTrabajo(type,nu,inco,incoService);
 
-
-
-
-
+	return m;
+}
 
 
 }
