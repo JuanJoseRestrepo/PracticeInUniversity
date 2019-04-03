@@ -41,7 +41,7 @@ public void setNameEmployer(String nameEmployer){
 }
 
 public String getIdentify(){
-	return identify
+	return identify;
 }
 
 public void setIdentify(String identify){
@@ -104,7 +104,7 @@ public String reportOfService(){
 	if( service1.getNumberTime < 10){
 		
 		msg += "El emmpleado" + getNameEmployer() + "tiene" + service1.getAccumulatedTypeOfService() + "Por concepto de Pedicure";
-	}else if( service1.getNumberTime() >= 10 && service1.getNumberTime() =< 20){
+	}else if( service1.getNumberTime() >= 10 && service1.getNumberTime() <= 20){
 		msg += "El emmpleado" + getNameEmployer() + "tiene" + service1.getAccumulatedIncome() + "de pesos" + " por ingresos acumulados";
 	}else if(service1.getNumberTime() >=20 && (service1.getNumberTime())%10 == 0){
 			msg += "Felicitaciones a" + getNameEmployer() + "!!!!!!!!!" + "La sala cubrira el valor de su impuesto";
@@ -113,30 +113,15 @@ public String reportOfService(){
 			}
 	}			
 	return msg;
-
-
 }
 
-public String verificarTrabajo(String type, int nu, double inco, double incoService){
-	
+public String showInfoClient(){
 	String msj ="";
 	
-	if(type.equals(ServiceType.PEDICURE)){
-		if(service1 == null){
-			setService1(type,nu,inco,incoService);
-		}
-	else if(type.equals(ServiceType.HAIR)[
-	
-	
+	msj += "El empleado" + getNameEmployer + "de identificación" + getIdentify + "Su fecha de ingreso" +
 	
 	return msj;
-	
-	
-	
-	
-	
-	
-}	
+}
 
 
 
